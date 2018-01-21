@@ -36,6 +36,10 @@ iframe {
 
 /*Estilos Menú Desplegable*/
 
+h5 {
+  text-align: center;
+}
+
 .input-group {
   padding: 1rem;
 }
@@ -56,6 +60,58 @@ iframe {
 
 .show>.btn-secondary.dropdown-toggle {
   background-color: #221e1c;
+}
+
+ul li.hassub > a::after { /* Arrow to indicate this item has sub menu (LI elements with sub menus have a ".hassub" class). */
+	border: 5px solid transparent;
+	content: '';
+	height: 0;
+	position: absolute;
+	right: 5px;
+	top: 35%;
+	width: 0;
+}
+
+.submenu-a ul li > ul{ /* Sub menus (Could be a DIV or UL wrapper) style */
+	background-color: #221e1c;
+    font-family: 'Raleway', sans-serif;
+    color: #f58827;
+    font-size: .8rem;   
+	display: none;
+	font-weight: normal;
+	width: 300px;
+	height: 400px; /* height of sub menu */
+	left: 100%;
+	padding: 10px;
+	position: absolute;
+	top: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	z-index: 1000;
+}
+
+
+/* ###### CSS Media queries ###### */
+
+@media screen and (max-width: 480px){ /* When screen size is 480px */
+	.submenu ul li > div, .submenu-a ul li > ul{
+		left: 30px; /* Stack the sub menus so they take up less space */
+	}
+
+	.submenu > ul li.hassub.selected::after{ /* Add "veil" to parent menus */
+        background: #221e1c;
+        color: #f58827;
+		content: '';
+		height: 100%;
+		left: 0;
+		opacity: .8;
+		pointer-events: none;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+	}
 }
 
 /*Estilos imagenes*/
