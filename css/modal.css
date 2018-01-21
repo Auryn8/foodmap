@@ -1,0 +1,20 @@
+/* Estilos generales */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  font-family: 'Raleway', sans-serif;
+  color: #f58827;
+  background-color: #221e1c;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+    height: 5%;
+    width: 5%;
+}
