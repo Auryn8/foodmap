@@ -1,0 +1,72 @@
+/* Estilos generales */
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: #221e1c;
+  font-family: 'Raleway', sans-serif;
+  color: #f58827;
+  font-size: 2rem;
+}
+
+h2 {
+  display:flex;
+  justify-content: center;
+  padding: 2rem;
+  border-bottom: 2px solid white;
+}
+
+iframe {
+  align-items: center;
+  padding: 1rem;
+}
+
+.map {
+  margin: 0;
+}
+
+
+/*Estilos Menú Desplegable*/
+
+.input-group {
+  padding: 1rem;
+}
+
+.dropdown-toggle,
+.dropdown-menu {
+  background-color: #221e1c;
+  font-family: 'Raleway', sans-serif;
+  color: #f58827;
+  font-size: .8rem; 
+}
+
+.dropdown-item {
+  font-family: 'Raleway', sans-serif;
+  color: #f58827;
+  font-size: .8rem; 
+}
+
+.show>.btn-secondary.dropdown-toggle {
+  background-color: #221e1c;
+}
+
+/*Estilos imagenes*/
+.foodpics {
+  text-align: center;
+}
+ 
+img {
+  
+  width: 6rem;
+  height: 5rem;
+  margin: .3rem;
+}
+
