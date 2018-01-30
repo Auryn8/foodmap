@@ -62,6 +62,16 @@ h5 {
   background-color: #221e1c;
 }
 
+/*Estilos Modal*/
+
+.modal-content {
+  background: #221e1c;
+  font-family: 'Raleway', sans-serif;
+  color: #f58827;
+  font-size: .8rem;
+}
+
+
 ul li.hassub > a::after { /* Arrow to indicate this item has sub menu (LI elements with sub menus have a ".hassub" class). */
 	border: 5px solid transparent;
 	content: '';
